@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Physics Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/projectpage.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+		<header id="header">
+			<a href="index.html" class="title">Home</a>
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- About -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">3D Physics Engine: <i>Rigid Bodies</i></h1>
+						<p>
+							Developed a physics engine to support rigid-body collision of 3D objects and integrated it into the existing in-house game engine, Azul. Created a demo showcasing free-falling chairs. Implemented various optimization techniques to enhance system performance.
+						</p>
+						<div class = "browsing" id = "youtube">
+							<iframe src="https://www.youtube.com/embed/7Zbd45Lhb2w"></iframe>
+						</div>
+						<div>
+							<h2 class = "work">My Work</h2>
+							<p>Architected and Implemented collision system in 3 stages.</p>
+							<div class = "subWork">
+								<h3>Collision Detection: </h3>
+								<p>
+									This stage is processed in two phases-broad phase and narrow phase. In the first phase <i>(Broad)</i>, collision checks are performed between Bounding Volumes of game objects. I implemented techniques like Grid Spatial Partitioning and hash mapping which improved collision check efficiency by 20%. In the next phase <i>(Narrow)</i>, colliding objects are traversed through their BVH to precisely find the point of contact.
+								</p>
+							</div>
+
+							<div class = "subWork">
+								<h3>Contact Generation: </h3>
+								<p>
+									In this stage, I implemented logic to generate collision data like interpenetration depth, contact normal, and coefficient of restitution based on the type and state of motion of the objects.
+								</p>
+							</div>
+
+							<div class = "subWork">
+								<h3>Contact Resolving: </h3>
+								<p>
+									Here, contacts are resolved by performing math operations and physics equations to get the final state of objects.
+								</p>
+							</div>
+
+							<p>
+								Further, I multithreaded the system, improving the performance by 12% and providing sufficient computational time for rendering and executing complex shaders.
+							</p>
+
+						</div>			
+					</div>
+				</section>
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/projectpage.js"></script>
+
+	</body>
+</html>

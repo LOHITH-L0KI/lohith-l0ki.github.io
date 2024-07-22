@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Game Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/projectpage.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+		<header id="header">
+			<a href="index.html" class="title">Home</a>
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- About -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Game Engine: <i>Azul</i></h1>
+						<p>
+							In my master's program, I designed and developed a 3D game engine called Azul using C++. This engine utilizes DirectX 11 APIs for graphics rendering. Additionally, I created a file converter that allows for the generation of custom files compatible with the engine from various file formats.
+						</p>
+						<div class = "browsing" id = "youtube">
+							<iframe src="https://www.youtube.com/embed/dldZQbFmeXE"></iframe>
+						</div>
+						<div>
+							<h2 class = "work">My Work</h2>
+							<div class = "subWork">
+								<h3>Memory Management: </h3>
+								<p>
+									I designed and implemented a custom memory system for high-speed memory allocation and tracking. I implemented a technique called object pooling, where memory is pre-allocated for each object type at program startup. This approach improves runtime performance by approximately 5%.
+								</p>
+							</div>
+
+							<div class = "subWork">
+								<h3>Custom Converter: </h3>
+								<p>
+									Developed a custom file converter utilizing tiny-GLTF and Google Protocol Buffers. This converter facilitates the conversion of various file formats, including glTF, glb, and PNG, into a single, engine-specific format (.azul). This streamlines the asset pipeline by consolidating model data and textures into a single, efficient file for use within the Azul game engine.
+								</p>
+							</div>
+
+							<div class = "subWork">
+								<h3>File System: </h3>
+								<p>
+									Implemented a File system that can load and unload files using Windows File Manager.
+								</p>
+							</div>
+
+							<div class = "subWork">
+								<h3>Enigne: </h3>
+								<p>
+									Designed and architected a 3D game engine, including a custom math library. Implemented optimization techniques like RVO, SIMD, and Proxy collision, resulting in a 14% performance improvement.<br>
+									Developed shaders for vertex, pixel, and geometry stages of the rendering pipeline. Additionally, implemented compute shaders, achieving a 20% performance boost in object animation. To facilitate efficient object traversal during updates and rendering, designed a Parent-Child-Sibling (PCS) tree structure.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/projectpage.js"></script>
+
+	</body>
+</html>
